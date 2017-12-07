@@ -16,7 +16,16 @@
       * [Rendering](#rendering)
       * [Fonts](#fonts)
         * [Font Anatomy](#font-anatomy)
+      * [Type of Fonts](#type-of-fonts)
+      * [Bitmap Image Manipulation](#bitmap-image-manipulation)
   * [Data Compression](#data-compression)
+    * [Why use Data Compression?](#why-use-data-compression)
+    * [Types of Compression](#types-of-compression)
+      * [Compression Algorithms](#compression-algorithms)
+        * [Pixel Packing](#pixel-packing)
+        * [RLE](#rle)
+        * [Dictionary Based Methods](#dictionary-based-methods)
+        * [JPEG compression](#jpeg-compression)
   * [File Formats](#file-formats)
   * [Animation](#animation)
   * [Sound](#sound)
@@ -173,7 +182,7 @@ There are three main categories of fonts:
   - **Pixel Group Processing**
     - More complex processing
     - Redefining colour groups based on neighbouring colours
-    - Appying spatial filters
+    - Applying spatial filters
       - Antialiasing
       - Blurring
       - Sharpening
@@ -182,6 +191,37 @@ There are three main categories of fonts:
       - Morphing
 
 ## Data Compression
+### Why use Data Compression?
+- Uncompressed bitmap images can be quite memory-expensive
+- Reduce space on storage
+- Reduce transfer time over the network
+
+### Types of Compression
+- **Lossy** ─ The original uncompressed can NOT be retrieved from the compressed version.
+Only acceptable for pictures  and sounds. Not good for bit-to-bit encoding.
+- **Lossless** ─ The original uncompressed can be restored from the compressed version.
+
+#### Compression Algorithms
+##### Pixel Packing
+  Not an actual compression algorithm, but can reduce the space by colours,
+  fitting more than one colour in the same byte.
+##### RLE
+  Run Length Encoding is a lossless algorithm that tries to encode consecutive values.
+  Example of RLE encoding:
+
+    OOOOOOOOOOHJEEEEEEEEEEEEZ
+
+Wound encode to
+
+    1O-1H-1J-12E-1Z
+
+This algorithm is hardly useful for photographic pictures,
+but might be still useful for diagrams and computer images
+with wide areas with the same exact colour.
+##### Dictionary Based Methods
+
+##### JPEG compression
+
 ## File Formats
 ## Animation
 ## Sound
