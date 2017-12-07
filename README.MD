@@ -155,8 +155,31 @@ There are three main categories of fonts:
     but also make use of **hints***, that explains the rendered how to properly display straight lines,
     and widely improve legibility.
 
-
-
+#### Bitmap Image Manipulation
+  - **Pixel Selection**
+    - Basic Marquee Tools
+      - Rectangle
+      - Ellipse
+      - Hand-drawn Curves
+    - Photoshop's _magic wand_
+      - Clicking on a pixel causes all similar colour to be selected
+    - Photoshop's _magic lasso_
+      - Draw around the area with the mouse
+      - Boundary of selection snaps to the edges within a specified distance
+  - **Pixel Point Processing**
+    - Redefining individual pixel colours independently from the neighbouring pixels
+    - Makes use of a transformation function
+    - Used for recolouring a photo, like those stupid Instagram filters.
+  - **Pixel Group Processing**
+    - More complex processing
+    - Redefining colour groups based on neighbouring colours
+    - Appying spatial filters
+      - Antialiasing
+      - Blurring
+      - Sharpening
+    - Applying arbitrary image filters
+      - Warping
+      - Morphing
 
 ## Data Compression
 ## File Formats
