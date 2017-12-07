@@ -123,6 +123,7 @@ This raises the problem of sub-pixel values, particularly for lines and fonts.
 #### Fonts
 > In the beginning Men created the computers without fonts, now the screen was formless and without text styles, raster
 > monospace fonts were over the surface of the deep, and the Spirit of Men was hovering over the pixels.
+>
 > ─ Computer Genesis 1-3
 
 **Fonts** are ways of representing characters on the screen with different styles.
@@ -153,6 +154,8 @@ There are three main categories of fonts:
   ─ These two types of fonts, still use vector-based images to display the shapes of the font,
     but also make use of **hints***, that explains the rendered how to properly display straight lines,
     and widely improve legibility.
+
+
 
 
 ## Data Compression
