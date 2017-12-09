@@ -21,11 +21,12 @@
   * [Data Compression](#data-compression)
     * [Why use Data Compression?](#why-use-data-compression)
     * [Types of Compression](#types-of-compression)
-      * [Compression Algorithms](#compression-algorithms)
-        * [Pixel Packing](#pixel-packing)
-        * [RLE](#rle)
-        * [Dictionary Based Methods](#dictionary-based-methods)
-        * [JPEG compression](#jpeg-compression)
+    * [Images Compression Algorithms](#images-compression-algorithms)
+      * [Pixel Packing](#pixel-packing)
+      * [RLE](#rle)
+      * [Dictionary Based Methods](#dictionary-based-methods)
+      * [JPEG compression](#jpeg-compression)
+      * [Video Compression Algorithms](#video-compression-algorithms)
   * [File Formats](#file-formats)
   * [Animation](#animation)
   * [Sound](#sound)
@@ -38,6 +39,7 @@
   * [Human Factors](#human-factors)
   * [Interaction Devices](#interaction-devices)
   * [Software Development](#software-development)
+
 
 # Multimedia
 ## What is multimedia?
@@ -201,11 +203,11 @@ There are three main categories of fonts:
 Only acceptable for pictures  and sounds. Not good for bit-to-bit encoding.
 - **Lossless** ─ The original uncompressed can be restored from the compressed version.
 
-#### Compression Algorithms
-##### Pixel Packing
+### Images Compression Algorithms
+#### Pixel Packing
   Not an actual compression algorithm, but can reduce the space by colours,
   fitting more than one colour in the same byte.
-##### RLE
+#### RLE
   Run Length Encoding is a lossless algorithm that tries to encode consecutive values.
   Example of RLE encoding:
 
@@ -218,13 +220,53 @@ Wound encode to
 This algorithm is hardly useful for photographic pictures,
 but might be still useful for diagrams and computer images
 with wide areas with the same exact colour.
-##### Dictionary Based Methods
 
-##### JPEG compression
+#### Dictionary Based Methods
+Dictionary compression algorithms are can store entire pattern that are used
+more than once to save space.
+
+**Huffmann & CCITT Compression** was developed for fax machines and documents scanner.
+Uses a predefined dictionary of b&w documents, and it is not stored in the compressed file.
+
+**Lempel-Ziv-Welch Algorithm** is another example of dictionary-based compression.
+The dictionary is constructed s the the encoding progresses. The compressed file
+becomes also the dictionary, saving space. Still not good for photographic images.
+
+#### JPEG compression
+Joint Photographic Expert Group is designed to compress
+photographic pictures with a lossy algorithm, especially
+exploiting the inability of the human eye to see full a
+range of colours. Not adequate for diagrams and similar.
+
+Steps:
+1. Convert image to HSV to create a γ map
+2. Downsample the colour map by 2x
+3. Divide both γ and colour map in 8x8 pixel blocks
+4. For each block, perform a _discrete cosine transformation_ on the data
+5. Use quantisation of the previous values
+6. Store these numbers in an efficient way
+
+
+#### Video Compression Algorithms
+Since videos have also a time dimension, they not only be compressed _spatially_
+but also _temporally_, meaning that adjacent frames can be compressed detecting
+changes between them. Certain frames are designated ask _key frames_, that get
+compressed only spatially. Each frame between key frames is replaced by a _difference
+frame_, that get compressed even further with linear compressions.
+
+**CODECs** are compression/decompression algorithm, often proprietary and
+hardware-implemented.
+
+Video data-rate is extremely high, even for our modern network speeds and
+storage capabilities, thus compression algorithm on videos are absolutely vital.
 
 ## File Formats
+Nothing here just yet, move along!
+
 ## Animation
 ## Sound
+
+-------------------------------------------------
 
 # Human Computer Interaction
 ## Design
