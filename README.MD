@@ -264,6 +264,17 @@ storage capabilities, thus compression algorithm on videos are absolutely vital.
 Nothing here just yet, move along!
 
 ## Animation
+To produce an animation still images are displayed in rapid sequence,
+the it's left to the human eye to perceive motion. At least 10 frames
+per second are required to produce a flicker-free motion, but much
+more a required to produce a very smooth motion.
+
+### Creation
+- **Model Design** ─ Uses a modelling tool to produce the objects to be animated.
+- **Animation Design** ─ Motion sequences, lighting, action and interaction are planned to a script.
+- **Rendering** ─ The script is run and a raster version is produced.
+- **Post-Production** ─ The final raster version is edited to match the creator's idea.
+
 ## Sound
 
 -------------------------------------------------
