@@ -276,6 +276,122 @@ more a required to produce a very smooth motion.
 - **Post-Production** ─ The final raster version is edited to match the creator's idea.
 
 ## Sound
+In a multimedia application, sound can be used as an input device, as an output device or both.
+
+![Sound Wave][SoundWave]
+
+Sound is a pressure wave which travels in air at about 331 m/s,
+with a frequency between 20 and 20,000 Hz.
+
+The sound wave has two physical characteristics:
+
+- **Amplitude** ─ The height of the wave, also measure the strength of the sound.
+- **Frequency** ─ The number of compressions per second.
+
+From the perspective of a human observer, the sound has three main characteristics:
+
+- **Loudness** ─ how intense the sound is perceived.
+- **Pitch** ─ The sense of the sound having a tone.
+- **Timbre** ─ The nature of the sound.
+
+Loudness is perceived logarithmically by the human hear, and
+decibels (dB), a logarithmic scale, is the official unit for
+sound loudness.
+
+### Dynamic range
+The dynamic range is the loudest measurable signal compared to quietest signal.
+It is measured using decibels (dB), a logarithmic scale.
+The range is defined as follows: `range = 10 × log(max ÷ min)`.
+
+The dynamic range of a 16-bit linear track (like in CD quality) is around 96 dB.
+
+### Sound Transduction
+Sound transduction is the process of converting a sound wave,
+into a different form of energy, i.e. electrical current.
+This is the internal process that powers the microphone.
+
+Microphones have a limited frequency response, they are more sensitive to sounds
+with certain frequencies.
+They also have limited dynamic range, they cannot deal well from sounds from the
+quietest to the loudest.
+
+Sounds are digitised using an analogue-to-digital converter (ADC).
+Sounds is reproduced using a digital-to-analogue converter (DAC).
+Both process introduces imperfections, reason why it is impossible to perfectly
+reproduce a recorded sound.
+
+Analogue-to-digital conversion has two parameters:
+- **Sampling Rate** ─ How many measure per second are performed.
+Measured in samples/second or Hz.
+- **Sample Size** ─ It's the size in bits (usually 8, 16, 32)
+and measure the precision of each sampling (the higher the better).
+Can be either linear (more precision) or logarithmic
+(wider range, lower resolution at higher values).
+
+![Sample Rate][SamplingRate]
+
+According to the **Nyquist sampling theorem**,
+the **sampling rate** must be twice the highest frequency of interest,
+otherwise **aliasing** may occur.
+
+The **bit-rate** is defined as `sample-rate × sample-size`.
+
+The size of a track is defined by the following relationship:
+
+`size = bit-rate × 8 × length × channels_no`.
+
+### Sound compression
+Due to the high difference between samples and the need to have an extremely
+high range of amplitudes, make particularly hard to compress sound.
+
+A simple **lossless** way to compress audio could to be to apply a threshold of
+silence, and compress the silence with run-length encoding.
+
+#### Differential Pulse Code Modulation (DPCM)
+This method is based on storing the difference between samples,
+but there is no reason to assume that the difference between the frames might be
+small at all.
+
+#### Adaptive Differential Pulse Code Modulation (ADPCM)
+Similar to DPCM, but uses an adaptive sample size to make a more efficient of
+bits, taking account of the change of signal.
+
+#### Linear Predictive Coding
+Linear Predictive Coding uses a mathematical model of the vocal tract.
+Instead of transmitting the original sound, it is converted into a model of the
+vocal tract, and it is sent over, achieving great compression, but very low
+voice fidelity.
+
+As a comparison, image that a picture is
+approximated into a vector format, and then sent over the network and
+reconstructed. Yeah, it is as bad as you are imagining.
+
+#### Perceptually Based Compression
+This wide area of compression tries to reduce the size, by deleting signals our
+ear is not capable of perceiving. For instance:
+
+- Too quiet
+- Obscured by another sound
+- Outside the hearing range
+
+These algorithms are extremely hard to implement, and thanks Codd, we won't
+dwell any further in the details. Just know that **MP3** and **AAC** make use of
+these techniques to achieve good lossy compression, with very little perceivable
+difference.
+
+### Known Sound Formats
+- **WAV** ─ Windows Waveform. Can be both lossy and lossless using (A)DPCM.
+- **SND** ─ NeXT/SUN file format.
+- **MPEG** ─ Both in MP3 and the new AAC variant.
+- **FLAC** ─ Free Lossless Audio Codec, part of the OGG family.
+
+### Midi
+Musical Instruments Digital Interface is a set of commands used to
+reproduce notes with different instruments digitally. It is left
+to the target machine to reproduce the sound. There is no guarantee
+on support or final quality due to the MIDI implementation often being
+hardware-implemented. Additionally, it has no support for voice.
+Like SVG for music. Just way less useful.
 
 -------------------------------------------------
 
@@ -291,3 +407,5 @@ more a required to produce a very smooth motion.
 
 
 [FontAnatomy]: http://www.designersinsights.com/wp-content/uploads/2012/03/Anatomy-of-Typography.png
+[SoundWave]: https://scienceaid.net/images/b/b6/crest.png
+[SamplingRate]: https://i.stack.imgur.com/tWdb0.gif
