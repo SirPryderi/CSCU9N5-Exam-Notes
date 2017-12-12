@@ -29,9 +29,33 @@
       * [Video Compression Algorithms](#video-compression-algorithms)
   * [File Formats](#file-formats)
   * [Animation](#animation)
+    * [Creation](#creation)
   * [Sound](#sound)
+    * [Dynamic range](#dynamic-range)
+    * [Sound Transduction](#sound-transduction)
+    * [Sound compression](#sound-compression)
+      * [Differential Pulse Code Modulation (DPCM)](#differential-pulse-code-modulation-dpcm)
+      * [Adaptive Differential Pulse Code Modulation (ADPCM)](#adaptive-differential-pulse-code-modulation-adpcm)
+      * [Linear Predictive Coding](#linear-predictive-coding)
+      * [Perceptually Based Compression](#perceptually-based-compression)
+    * [Known Sound Formats](#known-sound-formats)
+    * [Midi](#midi)
 * [Human Computer Interaction](#human-computer-interaction)
   * [Design](#design)
+    * [High-Level Design](#highlevel-design)
+      * [GOMS Model](#goms-model)
+      * [Four Level Approach](#four-level-approach)
+      * [Mental Model](#mental-model)
+      * [Shneiderman's Guidelines](#shneidermans-guidelines)
+        * [Recognise Diversity](#recognise-diversity)
+        * [Follow the Eight Golden Rules](#follow-the-eight-golden-rules)
+        * [Prevent Errors](#prevent-errors)
+    * [Interfaces](#interfaces)
+      * [Metaphors](#metaphors)
+      * [Data Display](#data-display)
+        * [Organisation](#organisation)
+        * [Affordance](#affordance)
+        * [Visual Effects](#visual-effects)
   * [Web Design](#web-design)
   * [Multimedia Design](#multimedia-design)
   * [Usability Testing](#usability-testing)
@@ -39,7 +63,6 @@
   * [Human Factors](#human-factors)
   * [Interaction Devices](#interaction-devices)
   * [Software Development](#software-development)
-
 
 # Multimedia
 ## What is multimedia?
@@ -397,6 +420,123 @@ Like SVG for music. Just way less useful.
 
 # Human Computer Interaction
 ## Design
+### High-Level Design
+####  GOMS Model
+Developed by Card, Moran, and Newell in the early 1980s.
+
+- **Goals** ─ What state do you want to achieve?
+- **Operators** ─ What specific individual actions can be carried out?
+- **Methods** ─ How can those actions be composed?
+- **Selection** ─ How do we know what entity is being operated upon?
+
+#### Four Level Approach
+Developed by Foley and van Dam in the late 1970s.
+
+- **Conceptual Level** is the user's _mental model_.
+- **Semantic Level** describes the meanings conveyed by the user's commands and
+  the output display.
+- **Syntactic Level** describes how the units that convey semantics are built up
+  into compete commands.
+- **Lexical Level** deals with the precise way the users specifies the syntax.
+
+The approach is top-down, the designers move fro the higher levels to the lower.
+
+#### Mental Model
+A good way towards UX design is helping the user building a consistent and
+useful mental model.
+
+- **Structural Model** ─ Understanding the inner working of the object.
+- **Functional Model** ─ Knowing how to interact with the object.
+
+#### Shneiderman's Guidelines
+
+##### Recognise Diversity
+Summarised as ***know thy user***, which does not mean to necessarily cater
+for all possible user, rather that one should tailor the interface and
+experience to the needs of the expected users.
+
+There are three useful tools that can be used to well understand user diversity:
+- **User Profiles** ─ Understand the skills, age, gender and similar information
+  about the target users.
+- **Task Profiles** ─ What is the user are trying to do?
+- **Personas** ─ Construct imaginary people that reflects your target users.
+
+##### Follow the Eight Golden Rules
+1. Strive for **consistency**.
+2. Enable frequent users to use **shortcuts**.
+3. Offer informative **feedback**.
+4. Design dialogues to yield **closure**.
+5. Offer simple **error handling**.
+6. Permit easy **reversal of actions**.
+7. Support internal **locus of control**.
+8. **Reduce** short-term memory load.
+
+
+##### Prevent Errors
+Human errors can often be prevented with the help of good design.
+
+### Interfaces
+#### Metaphors
+A metaphor is something that is based on a concept with which the user is
+already familiar.
+
+The main point about metaphors is that the user already know show the familiar
+object works. Unfortunately, if the metaphor is pushed too far, it might not be
+immediate to understand what is intended by it, and cause confusion.
+Sometimes, it is simply impossible to find a reasonable metaphor, because there
+is nothing in the real world reflecting the operation, like scrollbars.
+
+#### Data Display
+##### Organisation
+Smith and Mosier's objectives for data display:
+
+- Consistency of data display ─ terminology, fonts, colours, capitalisation.
+- Efficient information assimilation (e.g. neat columns, proper use of spacing)
+- Minimal memory load on user (requires careful organisation of multi-action
+  tasks)
+- Compatibility of data display with data entry
+- Flexibility for user control of the data display ─ e.g. different views of
+  working area.
+
+
+##### Affordance
+Give visual cues to the user what to do with the interface.
+Buttons press, scrollbars move the view, arrows indicate that something
+happens in that direction, textured surfaces indicate that is touchable.
+
+##### Visual Effects
+Don't vary the visual **intensity** a lot, too much is distracting.
+Keep to two levels only, with a limited use of high intensity to draw
+attention. For instance, the usage of **bold**.
+
+Various forms of **marking** can be used to help draw the user's attention, or
+just as helpful guidelines.
+
+Forms of marking:
+- Underlining
+- Enclosure in a box
+- Pointing with an arrow
+- Bullets
+- Colours
+
+The variety of **fonts** should be reduced to a max of three.
+Any more would just create confusion.
+
+**Inverse Video** can be used as an effective highlighting technique.
+
+**Blinking**. Don't used. Or else.
+
+**Colours** does attract attention, so should be used carefully and the brighter
+colours used sparingly. Also, keep in mind of accessibility for colour-blind
+users.
+
+**Audio** can play a useful role in an interface, since hearing is the second
+most important of the sense to hoomans. Its excessive use can quickly lead to
+annoy the user.
+
+**Visual Layout** needs: simplicity, clarity, organised views, and well-labelled
+components.
+
 ## Web Design
 ## Multimedia Design
 ## Usability Testing
