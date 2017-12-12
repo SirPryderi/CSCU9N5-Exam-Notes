@@ -632,6 +632,44 @@ The delivery of the application can vary from being published on the web,
 distributed via physical media, like a CD, or installed in a kiosk.
 
 ## Usability Testing
+Usability testing is carrying out experiments to find out specific information
+about a design. Usability testing is absolutely necessary, because whoever
+made the design had a very good idea of what he or she did, but a third user
+might have a totally different mental model, and finding the same design
+totally unusable.
+
+- Determine what it is you're trying to find out
+  - Is the product good enough?
+  - Does it meet company standards?
+  - How well does it work in the real world?
+  - Which is best, our product or our competitor's?
+  - ...
+- Use the purpose to create some objectives
+  - Can customers successfully use the help facility?
+  - Is the downloading time of the front web page too long?
+  - ...
+- Design the test
+  - Identify the people you are going too need
+  - Determine the experimental design
+  - Develop the tasks that your users will perform
+  - Specify what equipment and personnel you'll need
+- Get some users
+  - Fellow employees, family, friends
+  - For specialist user testing you might need test recruitment agency
+  - Don' test with people with inside knowledge
+  - You only need 5 users per test
+- Set up the test
+  - Prepare the equipment
+  - provide a script for your test supervisor
+- Run the test
+  - Prepare your users
+  - Run your users through their tasks and collect data
+- Thank the testers!
+  - You might test with them again
+- Analyse the data
+  - Drawing your conclusions and fixing the issues
+- Profit!
+
 
 ## Interaction Styles
 ## Human Factors
