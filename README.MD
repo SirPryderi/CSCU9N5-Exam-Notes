@@ -58,6 +58,17 @@
         * [Visual Effects](#visual-effects)
   * [Web Design](#web-design)
   * [Multimedia Design](#multimedia-design)
+    * [Design Tools And Techniques](#design-tools-and-techniques)
+      * [Brainstorming](#brainstorming)
+      * [Wireframes and Storyboarding](#wireframes-and-storyboarding)
+      * [Nav Maps](#nav-maps)
+      * [Task Analysis](#task-analysis)
+        * [Hierarchical task decomposition](#hierarchical-task-decomposition)
+        * [Knowledge analysis of tasks](#knowledge-analysis-of-tasks)
+        * [Entity-relation based analysis](#entityrelation-based-analysis)
+      * [Prototyping](#prototyping)
+      * [Testing](#testing)
+      * [Delivery](#delivery)
   * [Usability Testing](#usability-testing)
   * [Interaction Styles](#interaction-styles)
   * [Human Factors](#human-factors)
@@ -538,8 +549,90 @@ annoy the user.
 components.
 
 ## Web Design
+Mostly obvious content, gonna skip for now. Maybe forever, who knows?
+
 ## Multimedia Design
+### Design Tools And Techniques
+#### Brainstorming
+Brainstorming a process that works best with a group of people when you use
+the following four rules from Michael Morgan:
+1. Have a well-defined and clearly stated problem
+2. Have someone assigned to write down all the ideas as they occur
+3. Have the right number of people in the group
+4. Have someone in charge to help suspending the judgement, accepting and
+   recording every idea, encouraging people to build on the ideas of others, and
+   encouraging a way-out odd ideas.
+
+#### Wireframes and Storyboarding
+A **wireframe** is a visual guide that represents the skeletal framework of a
+website or GUI, also known as the page schematic or screen blueprint. They only
+focus on content, functionality, and behaviour, rather than style.
+
+![Wireframe][WireFrame]
+
+**Storyboarding** focuses on showing the _story_ of the user experience when
+navigating the website/GUI from one view to the other.
+
+![Storyboard][StoryBoard]
+
+#### Nav Maps
+Navigational Maps are the next stage in developing the design of a multimedia
+project.
+
+They show how a user will navigate through the various screens and individual
+elements of the presentations.
+
+They can be either: **linear**, **hierarchical**, **non-linear**, and
+**composite**.
+
+#### Task Analysis
+We approach a user-centered design by carrying out a **task analysis**.
+
+There are three basic form of task analysis.
+
+##### Hierarchical task decomposition
+The task which is set for the user is decomposed into sets of sequential steps.
+The aim is to discover the most representation of the decomposition structure.
+What **sub-tasks** need to be accomplished in order to perform the main task?
+
+##### Knowledge analysis of tasks
+Knowledge-based techniques look at what the users need to know about the objects
+and actions involved in a task, and how that knowledge is organised.
+
+It begins by listing all the object and actions involved in the task, and then
+building taxonomies of the formers (I have no clue of what that means).
+
+##### Entity-relation based analysis
+An **object-based** approach where the emphasis is on:
+- Identifying the actors and objects
+- The relationships between them and
+- The actions they performed
+
+#### Prototyping
+Building a **prototype** helps demonstrating some functionality to the client.
+
+It can be either:
+- **Horizontal** ─ All the interactions are prototyped, but with very little
+  depth.
+- **Vertical** ─ Only selected functionalities are prototyped, but with very
+  good depth.
+
+It only needs to be good enough to demonstrate the "look and feel" of the final
+system. Early prototypes, even paper ones, can be tested! Hurray!
+
+#### Testing
+- Functionality
+- Usability
+- Delivery Environment
+
+See [usability testing](#usability-testing).
+
+#### Delivery
+The delivery of the application can vary from being published on the web,
+distributed via physical media, like a CD, or installed in a kiosk.
+
 ## Usability Testing
+
 ## Interaction Styles
 ## Human Factors
 ## Interaction Devices
@@ -549,3 +642,5 @@ components.
 [FontAnatomy]: http://www.designersinsights.com/wp-content/uploads/2012/03/Anatomy-of-Typography.png
 [SoundWave]: https://scienceaid.net/images/b/b6/crest.png
 [SamplingRate]: https://i.stack.imgur.com/tWdb0.gif
+[WireFrame]: https://upload.wikimedia.org/wikipedia/commons/4/47/Profilewireframe.png
+[StoryBoard]: http://2.bp.blogspot.com/-ec1-w4wYEfc/UPM9wiLH6cI/AAAAAAAAAGg/mHzJJpWhB-c/s1600/myImage+(5).png
