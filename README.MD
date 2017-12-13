@@ -670,8 +670,56 @@ totally unusable.
   - Drawing your conclusions and fixing the issues
 - Profit!
 
-
 ## Interaction Styles
+The aim is to deepen understanding of the issues involved, and to provide guidance on interface design.
+
+Interaction Types ─ what is the aim of the interaction?
+  - Instructing
+  - Conversing
+  - Manipulating
+  - Exploring
+
+Interaction Styles ─ what mechanism is to be used? E.g.
+  - Typing
+  - Speech
+  - Gesture
+  - Touch
+  - Menu
+
+### WIMP
+Windows, Icons, Menu, Pointers.
+
+### Direct and Indirect Manipulation
+
+**Direct Manipulation** ─ WYSIWYG interfaces
+  - Extension of the real world
+  - Object and actions continuously visible
+  - Actions rapid and incremental
+  - Actions are easily reversible
+
+**Indirect manipulation** ─ Command lines and languages
+  - Worlds and text replace objects and actions
+  - Typing rather than pointing
+  - Difficulties with suitable metaphors
+
+### Menus
+Menus are useful for selecting an item from a specific fixed list
+
+- Structuring the decision of which command to perform
+- reminding the user of terminology
+- reducing the possibility of keystroke errors
+
+Type of menus:
+- **Singe Menus** ─ Should have two or more times. May allow just one, or
+multiple selections (radio buttons versus checkboxes).
+- **Hierarchical Menus** ─ Depth of a menus is the number of levels.
+Breadth of a menu is the number of times per level. Depth and Breadth must
+balanced for maximised ease-of-use. They allow to group logically-related items.
+
+### Form Filling
+Form-filling is useful for more general data entry. Easy to use, as all
+information is visible, user feels in control of what they type in.
+
 ## Human Factors
 ## Interaction Devices
 ## Software Development
