@@ -71,9 +71,12 @@
       * [Delivery](#delivery)
   * [Usability Testing](#usability-testing)
   * [Interaction Styles](#interaction-styles)
+    * [WIMP](#wimp)
+    * [Direct and Indirect Manipulation](#direct-and-indirect-manipulation)
+    * [Menus](#menus)
+    * [Form Filling](#form-filling)
   * [Human Factors](#human-factors)
-  * [Interaction Devices](#interaction-devices)
-  * [Software Development](#software-development)
+    * [Physiology](#physiology)
 
 # Multimedia
 ## What is multimedia?
@@ -721,9 +724,25 @@ Form-filling is useful for more general data entry. Easy to use, as all
 information is visible, user feels in control of what they type in.
 
 ## Human Factors
-## Interaction Devices
-## Software Development
+### Physiology
+Human physiology often affects the design of devices, by applying constraints.
+For example, keyboards, controllers and phones are designed differently to
+fill different physiologies.
 
+Human reaction times:
+
+| Signal  | Reaction Time |
+| :------ | :------------ |
+| Audio   | 150 ms        |
+| Visual  | 200 ms        |
+| Pain    | 700 ms        |
+
+Speed of accuracy and movement may vary from one user to another and that
+must be taken in account to maximise accessibility.
+
+**Cognition** is the process by which we become acquainted with things, how we
+gain knowledge. It involves understanding remembering, reasoning, attending,
+awareness, acquiring skills, and creating new ideas.
 
 [FontAnatomy]: http://www.designersinsights.com/wp-content/uploads/2012/03/Anatomy-of-Typography.png
 [SoundWave]: https://scienceaid.net/images/b/b6/crest.png
