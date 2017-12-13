@@ -91,9 +91,9 @@ Multimedia is useful for **education**, **information** and **entertainment**.
 
 ## Multimedia Application
 ### Communication information
-- **Modalities** ─ Related human sense.
+- **Modalities** ─ Related human sense, e.g. sound.
 - **Channels of communication** ─ Single-modality type of communication, e.g. speech.
-- **Medium** ─ Object that uses one or more channels, e.g. audio clip, picture, animation.
+- **Media** ─ Object that uses one or more channels, e.g. audio clip, picture, animation.
 
 ### Pros and Cons of multimedia
 **Pros**
@@ -101,7 +101,6 @@ Multimedia is useful for **education**, **information** and **entertainment**.
 - Multiple channels for the same message
 - Combined media can enhance message
 - Interactivity
-
 
 **Cons**
 - Poor design
@@ -113,12 +112,16 @@ Multimedia is useful for **education**, **information** and **entertainment**.
 - **Event Based** ─ System driven by the user events. E.g. GUIs.
 - **Time Based** ─ Things are arranged on a timeline. E.g. Flash.
 
-More often that not, an application use **all three forms** of presentations combined.
+More often than not, an application uses **all three forms** of presentations combined.
 
 ## Colour
 
 ### Additive Colour Matching
 Mixing different amounts and wavelengths of light together to produce all colours.
+
+### Subtractive Colour Matching
+Mixing different amount and wavelengths of light, to subtract them from light
+to generate all colours.
 
 ### Colours Models
 - Additive
@@ -140,8 +143,9 @@ Mixing different amounts and wavelengths of light together to produce all colour
   - Higher contrast
 
 ### Screen Corrections
-- **Gamut** ─
-- **Gamma** ─
+- **Gamut** ─ The subset of colours which can be accurately represented in a
+given circumstance, e.g. in an output device such as a screen.
+- **Gamma** ─ A non-linear operation use to encode and decode luminance.
 
 ## Graphics
 ### Logical vs Physical Representation
@@ -153,8 +157,8 @@ Displays are only capable of displaying **bitmaps**, matrices of bits or colours
 #### Scaling bitmaps
 Scaling bitmaps requires some sort of resampling to create or remove pixels.
 
-- Upsampling ─ increase size.
-- Downsampling ─ decrease size.
+- **Upsampling** ─ increase size.
+- **Downsampling** ─ decrease size.
 
 Possible resampling algorithms:
 - Nearest neighbour
@@ -162,46 +166,52 @@ Possible resampling algorithms:
 - Bicubic Interpolation
 
 #### Rendering
-Vector-based pictures have to be rendered to be converted to display-compatible bitmaps.
+Vector-based pictures have to be rendered to be converted to display-compatible
+bitmaps.
 
 This raises the problem of sub-pixel values, particularly for lines and fonts.
 
-**Antialiasing** uses an algorithm to fill pixel with a range of colours, more or less full to smooth the image.
+**Antialiasing** uses an algorithm to fill pixel with a range of colours, more
+or less full to smooth the image.
 
 #### Fonts
-> In the beginning Men created the computers without fonts, now the screen was formless and without text styles, raster
-> monospace fonts were over the surface of the deep, and the Spirit of Men was hovering over the pixels.
+> In the beginning Men created the computers without fonts, now the screen was
+> formless and without text styles, raster monospace fonts were over the surface
+> of the deep, and the Spirit of Men was hovering over the pixels.
 >
 > ─ Computer Genesis 1-3
 
 **Fonts** are ways of representing characters on the screen with different styles.
 
-Some combination of letters might be represented by a single glyph, to look better.
-Similarly, some characters may consist of one or more glyphs.
+Some combination of letters might be represented by a single **glyph**,
+to look better. Similarly, some characters may consist of one or more glyphs.
 
 
 ##### Font Anatomy
 ![Fonts Anatomy][FontAnatomy]
 
 A font has various properties, as described in the infographic above.
-The most common one, the font size, is determined by distance of the _ascender_ from the _descender_.
+The most common one, the **font size**, is determined by distance of the
+_ascender_ the _descender_.
 
-Kerning adjusts the space between letters, sometimes even to the point of overlapping,
-to reduce the space between glyphs, to make the text more compact, contributing to a more natural look.
+**Kerning** adjusts the space between letters, sometimes even to the point of
+overlapping, to reduce the space between glyphs, to make the text more compact,
+contributing to a more natural look.
 
 #### Type of Fonts
 There are three main categories of fonts:
 
 - **Raster**/**BitMap**
-  ─ These were the first fonts to be created and consists in various bitmaps for each character.
-    This kind of fonts did not allow clear resizing.
+  ─ These were the first fonts to be created and consists in various bitmaps for
+    each character. This kind of fonts did not allow clear resizing.
 - **Vector**
-  ─ Vector-based fonts solve the issue with resizing, because they use vector images to render the fonts,
-    but antialiasing might reduce legibility due to its inability of smoothing straight lines effectively.
+  ─ Vector-based fonts solve the issue with resizing, because they use vector
+    images to render the fonts, but antialiasing might reduce legibility due to
+    its inability of smoothing straight lines effectively.
 - **TrueType**/**OpenType**
-  ─ These two types of fonts, still use vector-based images to display the shapes of the font,
-    but also make use of **hints***, that explains the rendered how to properly display straight lines,
-    and widely improve legibility.
+  ─ These two types of fonts, still use vector-based images to display the
+    shapes of the font, but also make use of ***hints***, that explains the
+    rendered how to properly display straight lines, and widely improve legibility.
 
 #### Bitmap Image Manipulation
   - **Pixel Selection**
@@ -217,7 +227,7 @@ There are three main categories of fonts:
   - **Pixel Point Processing**
     - Redefining individual pixel colours independently from the neighbouring pixels
     - Makes use of a transformation function
-    - Used for recolouring a photo, like those stupid Instagram filters.
+    - Used for recolouring a photo, like those stupid Instagram filters
   - **Pixel Group Processing**
     - More complex processing
     - Redefining colour groups based on neighbouring colours
@@ -231,22 +241,25 @@ There are three main categories of fonts:
 
 ## Data Compression
 ### Why use Data Compression?
-- Uncompressed bitmap images can be quite memory-expensive
-- Reduce space on storage
-- Reduce transfer time over the network
+- Uncompressed bitmap images can be quite **memory-expensive**.
+- Reduce space on **storage**.
+- Reduce transfer time over the **network**.
 
 ### Types of Compression
-- **Lossy** ─ The original uncompressed can NOT be retrieved from the compressed version.
-Only acceptable for pictures  and sounds. Not good for bit-to-bit encoding.
-- **Lossless** ─ The original uncompressed can be restored from the compressed version.
+- **Lossy** ─ The original uncompressed version can NOT be retrieved from the
+  compressed version. Only acceptable for pictures and sounds. Not good for
+  bit-to-bit encoding.
+- **Lossless** ─ The original uncompressed can be restored from the compressed
+  version.
 
 ### Images Compression Algorithms
 #### Pixel Packing
-  Not an actual compression algorithm, but can reduce the space by colours,
-  fitting more than one colour in the same byte.
+Not an actual compression algorithm, but can reduce the space by colours,
+fitting more than one colour in the same byte.
+
 #### RLE
-  Run Length Encoding is a lossless algorithm that tries to encode consecutive values.
-  Example of RLE encoding:
+Run Length Encoding is a lossless algorithm that tries to encode consecutive values.
+Example of RLE encoding:
 
     OOOOOOOOOOHJEEEEEEEEEEEEZ
 
@@ -259,14 +272,14 @@ but might be still useful for diagrams and computer images
 with wide areas with the same exact colour.
 
 #### Dictionary Based Methods
-Dictionary compression algorithms are can store entire pattern that are used
+Dictionary compression algorithms can store entire patterns that are used
 more than once to save space.
 
 **Huffmann & CCITT Compression** was developed for fax machines and documents scanner.
 Uses a predefined dictionary of b&w documents, and it is not stored in the compressed file.
 
 **Lempel-Ziv-Welch Algorithm** is another example of dictionary-based compression.
-The dictionary is constructed s the the encoding progresses. The compressed file
+The dictionary is constructed as the the encoding progresses. The compressed file
 becomes also the dictionary, saving space. Still not good for photographic images.
 
 #### JPEG compression
@@ -281,30 +294,30 @@ Steps:
 3. Divide both γ and colour map in 8x8 pixel blocks
 4. For each block, perform a _discrete cosine transformation_ on the data
 5. Use quantisation of the previous values
-6. Store these numbers in an efficient way
+6. Store these numbers in an efficient way (LZW)
 
 
 #### Video Compression Algorithms
 Since videos have also a time dimension, they not only be compressed _spatially_
 but also _temporally_, meaning that adjacent frames can be compressed detecting
-changes between them. Certain frames are designated ask _key frames_, that get
-compressed only spatially. Each frame between key frames is replaced by a _difference
-frame_, that get compressed even further with linear compressions.
+changes between them. Certain frames are designated as _key frames_, that get
+compressed only spatially. Each frame between key frames is replaced by a
+_difference frame_, that get compressed even further with linear compressions.
 
-**CODECs** are compression/decompression algorithm, often proprietary and
+**CODECs** are compression/decompression algorithms, often proprietary and
 hardware-implemented.
 
 Video data-rate is extremely high, even for our modern network speeds and
-storage capabilities, thus compression algorithm on videos are absolutely vital.
+storage capabilities, thus compression video algorithms are absolutely vital.
 
 ## File Formats
 Nothing here just yet, move along!
 
 ## Animation
-To produce an animation still images are displayed in rapid sequence,
-the it's left to the human eye to perceive motion. At least 10 frames
+To produce an animation, still images are displayed in rapid sequence,
+then it's left to the human eye to perceive motion. At least 10 frames
 per second are required to produce a flicker-free motion, but much
-more a required to produce a very smooth motion.
+more (~60) a required to produce a very smooth motion.
 
 ### Creation
 - **Model Design** ─ Uses a modelling tool to produce the objects to be animated.
@@ -313,12 +326,13 @@ more a required to produce a very smooth motion.
 - **Post-Production** ─ The final raster version is edited to match the creator's idea.
 
 ## Sound
-In a multimedia application, sound can be used as an input device, as an output device or both.
+In a multimedia application, sound can be used as an input device, as an output
+device or both.
 
 ![Sound Wave][SoundWave]
 
 Sound is a pressure wave which travels in air at about 331 m/s,
-with a frequency between 20 and 20,000 Hz.
+with a frequency between **20** and **20,000** Hz.
 
 The sound wave has two physical characteristics:
 
@@ -333,7 +347,8 @@ From the perspective of a human observer, the sound has three main characteristi
 
 Loudness is perceived logarithmically by the human hear, and
 decibels (dB), a logarithmic scale, is the official unit for
-sound loudness.
+sound loudness. It measures the difference in magnitude from
+minimum perceivable amplitude at 1 kHz by the human hear.
 
 ### Dynamic range
 The dynamic range is the loudest measurable signal compared to quietest signal.
@@ -352,24 +367,26 @@ with certain frequencies.
 They also have limited dynamic range, they cannot deal well from sounds from the
 quietest to the loudest.
 
-Sounds are digitised using an analogue-to-digital converter (ADC).
-Sounds is reproduced using a digital-to-analogue converter (DAC).
-Both process introduces imperfections, reason why it is impossible to perfectly
-reproduce a recorded sound.
+Sounds are digitised using an **analogue-to-digital converter** (ADC).
+Sounds is reproduced using a **digital-to-analogue converter** (DAC).
+Both processes introduces imperfections, reason why it is impossible to
+perfectly reproduce a recorded sound.
 
 Analogue-to-digital conversion has two parameters:
 - **Sampling Rate** ─ How many measure per second are performed.
 Measured in samples/second or Hz.
-- **Sample Size** ─ It's the size in bits (usually 8, 16, 32)
-and measure the precision of each sampling (the higher the better).
-Can be either linear (more precision) or logarithmic
-(wider range, lower resolution at higher values).
+- **Sample Size** ─ It's the size in bits (usually 8, 16, 32) of each sample,
+and measures the precision of the sound sample (the higher the better).
+Can be either _linear_ (constant precision) or logarithmic
+(wider range, lower resolution at higher values, higher at lower ranges).
 
 ![Sample Rate][SamplingRate]
 
 According to the **Nyquist sampling theorem**,
 the **sampling rate** must be twice the highest frequency of interest,
 otherwise **aliasing** may occur.
+
+![Aliasing][Aliasing]
 
 The **bit-rate** is defined as `sample-rate × sample-size`.
 
@@ -379,7 +396,7 @@ The size of a track is defined by the following relationship:
 
 ### Sound compression
 Due to the high difference between samples and the need to have an extremely
-high range of amplitudes, make particularly hard to compress sound.
+wide range of amplitudes, it's particularly hard to compress sound.
 
 A simple **lossless** way to compress audio could to be to apply a threshold of
 silence, and compress the silence with run-length encoding.
@@ -399,9 +416,9 @@ Instead of transmitting the original sound, it is converted into a model of the
 vocal tract, and it is sent over, achieving great compression, but very low
 voice fidelity.
 
-As a comparison, image that a picture is
-approximated into a vector format, and then sent over the network and
-reconstructed. Yeah, it is as bad as you are imagining.
+As a comparison, image that a picture is approximated to a vector format,
+and then sent over the network and reconstructed.
+Yeah, it is as bad as you are imagining.
 
 #### Perceptually Based Compression
 This wide area of compression tries to reduce the size, by deleting signals our
@@ -456,7 +473,7 @@ Developed by Foley and van Dam in the late 1970s.
 The approach is top-down, the designers move fro the higher levels to the lower.
 
 #### Mental Model
-A good way towards UX design is helping the user building a consistent and
+A good way towards UX design is helping the user in Building a consistent and
 useful mental model.
 
 - **Structural Model** ─ Understanding the inner working of the object.
@@ -466,14 +483,14 @@ useful mental model.
 
 ##### Recognise Diversity
 Summarised as ***know thy user***, which does not mean to necessarily cater
-for all possible user, rather that one should tailor the interface and
+for all possible users, rather that one should tailor the interface and
 experience to the needs of the expected users.
 
 There are three useful tools that can be used to well understand user diversity:
 - **User Profiles** ─ Understand the skills, age, gender and similar information
   about the target users.
-- **Task Profiles** ─ What is the user are trying to do?
-- **Personas** ─ Construct imaginary people that reflects your target users.
+- **Task Profiles** ─ What is the users are trying to do?
+- **Personas** ─ Construct imaginary people that reflects your users target.
 
 ##### Follow the Eight Golden Rules
 1. Strive for **consistency**.
@@ -483,7 +500,7 @@ There are three useful tools that can be used to well understand user diversity:
 5. Offer simple **error handling**.
 6. Permit easy **reversal of actions**.
 7. Support internal **locus of control**.
-8. **Reduce** short-term memory load.
+8. Reduce **short-term memory** load.
 
 
 ##### Prevent Errors
@@ -494,7 +511,7 @@ Human errors can often be prevented with the help of good design.
 A metaphor is something that is based on a concept with which the user is
 already familiar.
 
-The main point about metaphors is that the user already know show the familiar
+The main point about metaphors is that the user already knows how the familiar
 object works. Unfortunately, if the metaphor is pushed too far, it might not be
 immediate to understand what is intended by it, and cause confusion.
 Sometimes, it is simply impossible to find a reasonable metaphor, because there
@@ -538,9 +555,9 @@ Any more would just create confusion.
 
 **Inverse Video** can be used as an effective highlighting technique.
 
-**Blinking**. Don't used. Or else.
+**Blinking**. Don't use it. Or else.
 
-**Colours** does attract attention, so should be used carefully and the brighter
+**Colours** do attract attention, so should be used carefully, and the brighter
 colours used sparingly. Also, keep in mind of accessibility for colour-blind
 users.
 
@@ -557,7 +574,7 @@ Mostly obvious content, gonna skip for now. Maybe forever, who knows?
 ## Multimedia Design
 ### Design Tools And Techniques
 #### Brainstorming
-Brainstorming a process that works best with a group of people when you use
+Brainstorming is a process that works best with a group of people when you use
 the following four rules from Michael Morgan:
 1. Have a well-defined and clearly stated problem
 2. Have someone assigned to write down all the ideas as they occur
@@ -747,5 +764,6 @@ awareness, acquiring skills, and creating new ideas.
 [FontAnatomy]: http://www.designersinsights.com/wp-content/uploads/2012/03/Anatomy-of-Typography.png
 [SoundWave]: https://scienceaid.net/images/b/b6/crest.png
 [SamplingRate]: https://i.stack.imgur.com/tWdb0.gif
+[Aliasing]: http://www.realhd-audio.com/wp-content/uploads/2014/05/140528_aliasing_illustration.jpg
 [WireFrame]: https://upload.wikimedia.org/wikipedia/commons/4/47/Profilewireframe.png
 [StoryBoard]: http://2.bp.blogspot.com/-ec1-w4wYEfc/UPM9wiLH6cI/AAAAAAAAAGg/mHzJJpWhB-c/s1600/myImage+(5).png
